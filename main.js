@@ -25,6 +25,7 @@ let scoreCount = 0;
 		window.addEventListener("keydown", (e) => {
 
 			switch(e.keyCode) {
+				// arrow keys
 				case 37: 
 					left = true, up = false, right = false, down = false;
 					break;
@@ -40,8 +41,25 @@ let scoreCount = 0;
 				case 40: 
 					left = false, up = false, right = false, down = true;
 					break;
-			}
 
+				// wasd keys
+
+				case 65: 
+					left = true, up = false, right = false, down = false;
+					break;
+
+				case 87: 
+					left = false, up = true, right = false, down = false;
+					break;
+
+				case 68: 
+					left = false, up = false, right = true, down = false;
+					break;
+
+				case 83: 
+					left = false, up = false, right = false, down = true;
+					break;
+			}
 		});
 
 		setInterval(() => {
